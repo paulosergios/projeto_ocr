@@ -16,47 +16,49 @@ Pequeno serviço de OCR: recebe **PDF**, renderiza as páginas, faz **pré-proce
 
 ## Estrutura
 
+<details>
+  <summary><strong>Estrutura do projeto</strong></summary>
+  <pre>
 ocr_mini/
 ├─ app/
-│ ├─ main.py # FastAPI + OCR por página
-│ └─ preprocess.py # pipeline de pré-processamento
-├─ requirements.txt
+│  ├─ main.py
+│  └─ preprocess.py
+├─ tests/
+│  ├─ sample1.pdf
+│  └─ sample2.pdf
 ├─ Dockerfile
-├─ README.md
-└─ tests/
-    ├─ sample1.pdf # baixa resolução
-    └─ sample2.pdf # boa resolução
+├─ requirements.txt
+└─ README.md
+  </pre>
+</details>
 
-## OBS:. Por se apenas um pequeno projeto sem os devidos aperfeiçoamentos, a acurácia do primiero exemplo é baixa (algo próximo dos 15-20%), já o segundo exemplo, de melhor resolução, apresenta acurácia acima de 80%
 
-yaml
-Copiar código
+
+## OBS:. Por se apenas um pequeno projeto sem os devidos aperfeiçoamentos, a acurácia do primeiro exemplo é baixa (algo próximo dos 15-20%), já o segundo exemplo, de melhor resolução, apresenta acurácia acima de 80%
 
 ---
 
-## 🐳 Rodando com Docker (recomendado)
+## Rodando com Docker (recomendado)
 
-> Requisitos: Docker instalado e em execução.
-
-### Build
+## Build
 ```bash
 docker build -t ocr_mini .
 ```
 
-### Run
+## Run
 
-## Windows PowerShell
+### Windows PowerShell
 
 ```bash
 docker run --rm -p 8000:8000 -v "${PWD}\tests:/tests" ocr_mini
 ```
 
-## Windows CMD
+### Windows CMD
 
 ```bash
 docker run --rm -p 8000:8000 -v %CD%\tests:/tests ocr_mini
 ```
-## Git Bash / WSL / Linux / macOS
+### Git Bash / WSL / Linux / macOS
 
 ```bash
 docker run --rm -p 8000:8000 -v "$PWD/tests:/tests" ocr_mini
