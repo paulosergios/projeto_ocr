@@ -34,7 +34,7 @@ ocr_mini/
 
 
 
-## OBS:. Por se apenas um pequeno projeto sem os devidos aperfeiçoamentos, a acurácia do primeiro exemplo é baixa (algo próximo dos 15-20%), já o segundo exemplo, de melhor resolução, apresenta acurácia acima de 80%
+##### OBS:. Por se apenas um pequeno projeto sem os devidos aperfeiçoamentos, a acurácia do primeiro exemplo é baixa (algo próximo dos 15-20%), já o segundo exemplo, de melhor resolução, apresenta acurácia acima de 80%
 
 ---
 
